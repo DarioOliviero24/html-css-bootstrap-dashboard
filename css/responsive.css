@@ -1,0 +1,35 @@
+
+/* DESKTOP */
+@media screen and (min-width:1100px) {
+
+}
+
+/*TERRA DI NESSUNO PERO FUNZIONA*/
+@media screen and (min-width:994px) {
+
+}
+
+@media screen and (max-width:993px) {
+#home,#stats,#signals,#admin{
+    display: none;
+}
+}
+@media screen and (min-width:992px) {
+    :root {
+        --aside-bar-width: 140px;
+    }
+}
+/* TABLET */
+@media screen and (max-width:800px) {
+#home,#stats,#signals,#admin {
+    display: none;
+}
+}
+
+
+/* MOBILE */
+@media screen and (max-width:500px) {
+#home,#stats ,#signals,#admin {
+    display: none;
+}
+}

@@ -11,47 +11,142 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
+    <!--responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 </head>
 <body>
     <!--HEADER-->
     <header>
-        <div class="container text-center">
-            <div class="row align-items-start">
-                <div class="my-col-2 p-3">
-                    <img src="./img/logo.svg" alt="Logo">
+        <div class="container-fluid h-navbar border border-bottom-1 py-3">
+            <div class="row align-items-center bg-white">
+                <div class="col-auto">
+                    <a class="a" href="#"><img src="img/mobile-logo.png" alt="Boolean" id="mobile-logo"
+                            class="d-lg-none"></a>
+                    <a class="a" href="#"><img src="img/logo.svg" alt="Booelean" id="desktop-logo"
+                            class="d-none d-lg-inline-block"></a>
                 </div>
-                <div class="my-col-8">
-                    <nav class="navbar bg-body-tertiary">
-                        <form class="container-fluid">
-                            <div class="input-group">
-                                
-                                <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username"
-                                    aria-describedby="basic-addon1">
-                            </div>
-                        </form>
-                    </nav>
-
+                <div class="col">
+                    <div class="input-group mb-0">
+                        <input class="form-control me-2 bg-search-bar" type="search"
+                            placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                    </div>
                 </div>
-                <div class="my-col-2">
-                    button
+                <div class="col-auto">
+                    <a class="a" href="#">
+                        <i class="fs-4 bi bi-list-ul d-none d-md-inline mx-2"></i>
+                    </a>
+                    <a class="a" href="#">
+                        <i class="fs-4 bi bi-patch-question-fill d-none d-none d-md-inline mx-2"></i>
+                    </a>
+                    <a class="a" href="#">
+                        <i class="fs-4 bi bi-three-dots-vertical d-none d-none d-md-inline mx-2"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fs-4 bi bi-bell-fill notific-icon-color mx-2" data-bs-toggle="dropdown"
+                            data-bs-display="static" aria-expanded="false"></i>
+                    </a>
+                    
                 </div>
             </div>
         </div>
-    </header>
 
     <!--MAIN-->
     <main>
-        <section>
-            <div>
-               <div>
+        <div class="container-fluid d-flex p-0">
+        
+            <!-- Left Nav Bar -->
+            <aside class="w-aside sidebar-bg bg-primary-secondary text-center p-3 relative">
+                <div class="row flex-column">
+                    <div class="col-auto">
+                        <div class="icon text-white pt-3 px-1 my-1"> 
+                            <a class="a-2" href="#" class="d-lg-inline mx-2">
+                                <i class="fa-solid fa-house fs-4 mb-4"></i>
+                                <span id="home">Home</span> 
+                            </a>
+                        </div>
+                        <div class="icon text-white pt-3 px-1 my-1">
+                           
+                            <a class="a-2" href="#" class=" mx-2">
+                                <i class="fa-solid fa-chart-simple fs-4 mb-4"></i>
+                                <span id="stats">Stats</span>
+                            </a>
+                        </div>
+                        <div class="icon text-white pt-3 px-1 my-1">
+                            <a class="a-2" href="#" class=" mx-2">
+                                <i class="fa-solid fa-signal fs-4 mb-4"></i>
+                                <span id="signals">Signals</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-auto position-absolute Left-0 bottom-0 mx-1">
+                        <div class="icon text-white pt-2 pt-2 pb-3 my-4">
+                            <a class="a-2" href="#" class=" mx-2">
+                                <i class="bi bi-gear-fill fs-4 mb-4"></i></i>
+                                <span id="admin">Admin</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        
+            <!-- Big-Web-Application Section -->
+            <div class="application-width overflow-auto">
 
-               </div>
+            <!-- Blue-Section -->
+            <div class="row bg-primary p-0 py-3 m-0 align-items-center flex-column-reverse flex-md-row">
+                
+            <!-- Boolean-Badge -->
+            <div class="col-12 col-md-5 col-lg-6 py-2">
+                <div class="title-n-badge d-flex align-items-center pt-3">
+                    <h3 class="text-white">Boolean</h3>
+                    <span class="badge badge-bg-primary mx-2 pb-2 rounded-4">
+                        <a class="a-azzurro" href="#">
+                            Piano blaze
+                        </a>
+                    </span>
+                </div>
+                <div class="badge-apps pb-4 d-flex align-items-center my-2">
+                    <span class="badge badge-bg-primary pb-2 rounded-4">
+                        <a class="a-azzurro" href="#">
+                           3 App 
+                        </a>
+                    </span>
+                    <i class="fa-solid fa-angles-right text-white mx-2"></i>
+                    <span class="badge badge-bg-primary mx-2 pb-2 rounded-4 d-none d-lg-inline">
+                        <a class="a-azzurro" href="#">
+                           Boolean mobile
+                        </a>
+                    </span>
+                    <span class="badge badge-bg-primary mx-2 pb-2 rounded-4 d-none d-lg-inline">
+                        <a class="a-azzurro" href="#">
+                            Boolean web
+                        </a>
+                    </span>
+                    <span class="badge badge-bg-primary mx-2 pb-2 rounded-4 d-none d-lg-inline">
+                        <a class="a-azzurro" href="#">
+                            Boolean blog
+                        </a>
+                    </span>
+                    <span class="badge badge-bg-primary mx-2 pb-2 rounded-4 d-lg-none">
+                        +
+                    </span>
+                </div>
+            </div>
+            <!-- Studenti Online -->
+            <div class="col-12 col-md-4 col-lg-3 py-2">
+                <p class="text-white m-0">Studenti online negli ultimi 30 minuti</p>
+                <h3 class="text-white fs-2">125</h2>
+            </div>
 
-               <div>
 
-               </div>
-            </div>  
-        </section>
+
         
 
     </main>

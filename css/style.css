@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /*COLUMN*/
 .my-col-1 {
     width: calc((100% / 12) * 1);
@@ -70,3 +75,77 @@
     max-width: calc((100% / 12) * 12);
 
 }
+/*CSS*/
+.a {
+    text-decoration: none;
+    color: black;
+}
+.a-azzurro {
+    text-decoration: none;
+    color: white;
+}
+.a-2 {
+   text-decoration: none;
+   color: white;
+}
+
+:root {
+    --navbar-header-height: 80px;
+    --aside-bar-width: 75px;
+}
+
+
+header {
+    background-color: #F8F9FA;
+}
+
+.h-navbar {
+    height: var(--navbar-header-height);
+}
+
+.w-aside {
+    width: var(--aside-bar-width);
+    height: calc(100vh - var(--navbar-header-height));
+}
+
+#mobile-logo {
+    width: 50px;
+}
+
+#desktop-logo {
+    width: 250px;
+}
+
+.bg-search-bar {
+    background-color: #E5E5E5;
+}
+
+.notific-icon-color {
+    color: #FF8F00;
+}
+
+
+.edit-btn:hover,
+.delete-btn:hover {
+    background-color: yellow;
+}
+
+.edit-btn:hover>i,
+.delete-btn:hover>i {
+    color: white;
+}
+.sidebar-bg {
+    background-image: url("../img/sidebar-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-color: #051E34;
+}
+
+.application-width {
+    height: calc(100vh - var(--navbar-header-height));
+    width: calc(100vw - var(--aside-bar-width));
+}
+.badge-bg-primary {
+    background-color: #165BBA;
+}
+
