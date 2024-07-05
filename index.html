@@ -49,37 +49,36 @@
                         <i class="fs-4 bi bi-three-dots-vertical d-none d-none d-md-inline mx-2"></i>
                     </a>
                     <a href="#">
-                        <i class="fs-4 bi bi-bell-fill notific-icon-color mx-2" data-bs-toggle="dropdown"
-                            data-bs-display="static" aria-expanded="false"></i>
+                        <i class="fs-4 bi bi-bell-fill notific-icon-color mx-2" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false"></i>
                     </a>
                     
                 </div>
             </div>
         </div>
-
+    </header>
     <!--MAIN-->
     <main>
         <div class="container-fluid d-flex p-0">
         
-            <!-- Left Nav Bar -->
+            <!-- Left-Main -->
             <aside class="w-aside sidebar-bg bg-primary-secondary text-center p-3 relative">
                 <div class="row flex-column">
                     <div class="col-auto">
                         <div class="icon text-white pt-3 px-1 my-1"> 
-                            <a class="a-2" href="#" class="d-lg-inline mx-2">
+                            <a class="a-2 d-lg-inline mx-2" href="#">
                                 <i class="fa-solid fa-house fs-4 mb-4"></i>
                                 <span id="home">Home</span> 
                             </a>
                         </div>
                         <div class="icon text-white pt-3 px-1 my-1">
                            
-                            <a class="a-2" href="#" class=" mx-2">
+                            <a class="a-2 mx-2" href="#">
                                 <i class="fa-solid fa-chart-simple fs-4 mb-4"></i>
                                 <span id="stats">Stats</span>
                             </a>
                         </div>
                         <div class="icon text-white pt-3 px-1 my-1">
-                            <a class="a-2" href="#" class=" mx-2">
+                            <a class="a-2 mx-1" href="#">
                                 <i class="fa-solid fa-signal fs-4 mb-4"></i>
                                 <span id="signals">Signals</span>
                             </a>
@@ -87,8 +86,8 @@
                     </div>
                     <div class="col-auto position-absolute Left-0 bottom-0 mx-1">
                         <div class="icon text-white pt-2 pt-2 pb-3 my-4">
-                            <a class="a-2" href="#" class=" mx-2">
-                                <i class="bi bi-gear-fill fs-4 mb-4"></i></i>
+                            <a class="a-2 mx-2" href="#">
+                                <i class="bi bi-gear-fill fs-4 mb-4"></i>
                                 <span id="admin">Admin</span>
                             </a>
                         </div>
@@ -97,10 +96,10 @@
             </aside>
         
             <!-- Big-Web-Application Section -->
-            <div class="application-width overflow-auto">
+            <div class="application-width overflow-auto"></div>
 
             <!-- Blue-Section -->
-            <div class="row bg-primary p-0 py-3 m-0 align-items-center flex-column-reverse flex-md-row">
+            <div class="row bg-primary p-0 py-3 m-0 align-items-center flex-column-reverse flex-md-row"></div>
                 
             <!-- Boolean-Badge -->
             <div class="col-12 col-md-5 col-lg-6 py-2">
@@ -142,13 +141,247 @@
             <!-- Studenti Online -->
             <div class="col-12 col-md-4 col-lg-3 py-2">
                 <p class="text-white m-0">Studenti online negli ultimi 30 minuti</p>
-                <h3 class="text-white fs-2">125</h2>
+                <h3 class="text-white fs-2">125</h3>
             </div>
+            <!-- Nuovo studente -->
+            <div class="col-12 col-md-4 col-lg-3 py-2">
+                <p class="text-white m-0">Nuovo studente</p>
+                <button type="button" class="btn btn-outline-light fs-5 mx-0"><i class="fa-solid fa-plus"></i></button>    
+            </div>
+            <section-table class="bg-white">
+                <div class="row px-3 py-4 ms-0 me-0">
+                    <div class="col-12 col-lg-8">
+                        <!-- Data Classes Section | W/ Table -->
+                        <div class="col-12 border border-secondary-subtle border-1 rounded-2 p-0">
+                            <div class="h2 fs-2 bg-card-title pt-2 px-3 pb-3 m-0 border border-bottom-1 rounded-top-1">
+                                <p class="p-0 m-0 fw-semibold">Prossime classi</p>
+                            </div>
+                            <div class="p-3">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Nome</th>
+                                            <th scope="col" class="d-none d-md-table-cell">Data inizio</th>
+                                            <th scope="col" class="d-none d-md-table-cell">ROI</th>
+                                            <th scope="col">Stato</th>
+                                            <th scope="col">Azioni</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!--Righa1-->
+                                        <tr>
+                                            <th scope="row">
+                                                <img class="size" src="img/class-avatar.jpg" alt="avatar">
+                                                <span class="fw-normal ms-1">
+                                                    Classe 75
+                                                </span>
+                                            </th>
+                                            <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success">
+                                                    <button type="button" class="btn btn-success size2">Done</button>
+
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-center">
+                                                    <div
+                                                        class="edit-btn border border-dark border-1 px-2 py-1 rounded-2 mx-2 cursor-pointer">
+                                                        <i class="fa-solid fa-pencil"></i></div>
+                                                    <div
+                                                        class="delete-btn border border-dark border-1 px-2 py-1 rounded-2 cursor-pointer">
+                                                        <i class="bi bi-trash3-fill"></i></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!--Righa2-->
+                                        <tr>
+                                            <th scope="row">
+                                                <img class="size" src="img/class-avatar.jpg" alt="avatar">
+                                                <span class="fw-normal ms-1">Classe 76</span>
+
+                                            </th>
+                                            <td class="d-none d-md-table-cell">16 Feb 2021</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-success">
+                                                    <button type="button" class="btn btn-success size2">Done</button>
+
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-center">
+                                                    <div
+                                                        class="edit-btn border border-dark border-1 px-2 py-1 rounded-2 mx-2 cursor-pointer">
+                                                        <i class="fa-solid fa-pencil"></i></div>
+                                                    <div
+                                                        class="delete-btn border border-dark border-1 px-2 py-1 rounded-2 cursor-pointer">
+                                                        <i class="bi bi-trash3-fill"></i></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!--Righa3-->
+                                        <tr>
+                                            <th scope="row">
+                                                    <img class="size" src="img/class-avatar.jpg" alt="avatar">
+                                                    <span class="fw-normal ms-1">Classe 77</span>
+                                            </th>
+                                            <td class="d-none d-md-table-cell">17 Feb 2024</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-warning text-white">
+                                                    <button type="button" class="btn btn-warning size3">Process</button>
+
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-center">
+                                                    <div
+                                                        class="edit-btn border border-dark border-1 px-2 py-1 rounded-2 mx-2 cursor-pointer">
+                                                        <i class="fa-solid fa-pencil"></i></div>
+                                                    <div
+                                                        class="delete-btn border border-dark border-1 px-2 py-1 rounded-2 cursor-pointer">
+                                                        <i class="bi bi-trash3-fill"></i></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!--Righa4-->
+                                        <tr>
+                                            <th scope="row"> 
+                                                <img class="size" src="img/class-avatar.jpg" alt="avatar">
+                                                <span class="fw-normal ms-1">Classe 78</span>
+                                            </th>
+                                            <td class="d-none d-md-table-cell">18 Feb 2024</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-avv">
+                                                    <button type="button" class="btn btn-success size2">Done</button>
 
 
-
-        
-
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-center">
+                                                    <div
+                                                        class="edit-btn border border-dark border-1 px-2 py-1 rounded-2 mx-2 cursor-pointer">
+                                                        <i class="fa-solid fa-pencil"></i></div>
+                                                    <div
+                                                        class="delete-btn border border-dark border-1 px-2 py-1 rounded-2 cursor-pointer">
+                                                        <i class="bi bi-trash3-fill"></i></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!--Righa5-->
+                                        <tr>
+                                            <th scope="row">
+                                                <img class="size" src="img/class-avatar.jpg" alt="avatar">
+                                                <span class="fw-normal ms-1">Classe 79</span>
+                                            </th>
+                                            <td class="d-none d-md-table-cell">19 Feb 2024</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-avv">
+                                                    <button type="button" class="btn btn-danger size2">Failed</button>
+                                                                                                               
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-center">
+                                                <div class="edit-btn border border-dark border-1 px-2 py-1 rounded-2 mx-2 cursor-pointer">
+                                                    <i class="fa-solid fa-pencil"></i>
+                                                </div>
+                                                <div class="delete-btn border border-dark border-1 px-2 py-1 rounded-2 cursor-pointer">
+                                                    <i class="bi bi-trash3-fill"></i>
+                                                </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!--Righa6-->
+                                        <tr>
+                                            <th scope="row">
+                                                <img class="size" src="img/class-avatar.jpg" alt="avatar">
+                                                <span class="fw-normal ms-1">Classe 80</span>
+                                            </th>
+                                            <td class="d-none d-md-table-cell">20 Feb 2024</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-avv">
+                                                    <button type="button" class="btn btn-success size2">Done</button>
+                                        
+                                        
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-center">
+                                                    <div class="edit-btn border border-dark border-1 px-2 py-1 rounded-2 mx-2 cursor-pointer">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </div>
+                                                    <div class="delete-btn border border-dark border-1 px-2 py-1 rounded-2 cursor-pointer">
+                                                        <i class="bi bi-trash3-fill"></i>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!--Righa7-->
+                                        <tr>
+                                            <th scope="row">
+                                                <img class="size" src="img/class-avatar.jpg" alt="avatar">
+                                                <span class="fw-normal ms-1">Classe 81</span>
+                                            </th>
+                                            <td class="d-none d-md-table-cell">21 Feb 2024</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-avv">
+                                                    <button type="button" class="btn btn-danger size2">Failed</button>
+                                        
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-center">
+                                                    <div class="edit-btn border border-dark border-1 px-2 py-1 rounded-2 mx-2 cursor-pointer">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </div>
+                                                    <div class="delete-btn border border-dark border-1 px-2 py-1 rounded-2 cursor-pointer">
+                                                        <i class="bi bi-trash3-fill"></i>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <!--Righa8-->
+                                        <tr>
+                                            <th scope="row">
+                                                <img class="size" src="img/class-avatar.jpg" alt="avatar">
+                                                <span class="fw-normal ms-1">Classe 82</span>
+                                            </th>
+                                            <td class="d-none d-md-table-cell">22 Feb 2024</td>
+                                            <td class="d-none d-md-table-cell">20%</td>
+                                            <td>
+                                                <span class="badge text-bg-avv">
+                                                    <button type="button" class="btn btn-success size2">Done</button>
+                                        
+                                        
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex justify-content-center">
+                                                    <div class="edit-btn border border-dark border-1 px-2 py-1 rounded-2 mx-2 cursor-pointer">
+                                                        <i class="fa-solid fa-pencil"></i>
+                                                    </div>
+                                                    <div class="delete-btn border border-dark border-1 px-2 py-1 rounded-2 cursor-pointer">
+                                                        <i class="bi bi-trash3-fill"></i>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div> 
+                </div>    
+            </section-table>
+        </div>       
     </main>
     <!--FOOTER-->
     <footer>

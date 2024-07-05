@@ -127,7 +127,7 @@ header {
 
 .edit-btn:hover,
 .delete-btn:hover {
-    background-color: yellow;
+    background-color: red;
 }
 
 .edit-btn:hover>i,
@@ -148,4 +148,22 @@ header {
 .badge-bg-primary {
     background-color: #165BBA;
 }
-
+.width{
+    width: 30px;
+    text-align: center;
+}
+.bg-white{
+    background-color: white;
+}
+.size{
+    width: 25px;
+    height: 25px;
+}
+.size2 {
+    width: 65px;
+    height: 35px;
+}
+.size3 {
+    width: 75px;
+    height: 35px;
+}
