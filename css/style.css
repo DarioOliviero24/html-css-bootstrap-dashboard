@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
 /*COLUMN*/
 .my-col-1 {
     width: calc((100% / 12) * 1);
